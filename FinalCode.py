@@ -2,12 +2,13 @@ import random
 
 Ran = random.randrange(1, 11)
 guess = input("Guess your number ")
-counter = 1
+counter = 0
 
 while guess != Ran:
 
     if int(guess) == Ran:
-        print(str(counter) + " Attempts")
+        counter = counter + 1
+        print(str(counter) + " Attempt(s)")
         print("Winner")
         break
 
